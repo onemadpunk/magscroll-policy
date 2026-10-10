@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MagScroll privacy information: local reading, listening and notes, optional connections, SDK diagnostics and deletion.">
+<title>MagScroll · Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f5f2eb; --panel:#fffdf8; --ink:#191919; --muted:#565650; --accent:#a82035; --line:#d6d2ca; }
+  @media (prefers-color-scheme:dark) { :root { --bg:#111211; --panel:#1b1d1b; --ink:#f5f2eb; --muted:#c4c6bf; --accent:#ff8191; --line:#444740; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+  header,main,footer { width:min(100% - 40px,820px); margin-inline:auto; }
+  header { padding:36px 0 22px; border-bottom:4px solid var(--accent); }
+  .brand { font-size:28px; font-weight:900; letter-spacing:-1px; }
+  .brand span { color:var(--accent); }
+  .strap,.date { color:var(--muted); font-size:15px; }
+  main { padding:28px 0 40px; }
+  h1 { margin:0; font-size:clamp(32px,6vw,48px); line-height:1.1; letter-spacing:-1px; }
+  h2 { font-size:24px; line-height:1.3; margin:38px 0 10px; }
+  p { margin:12px 0; overflow-wrap:anywhere; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+  .draft { padding:16px 20px; border:1px solid var(--line); border-left:5px solid var(--accent); background:var(--panel); }
+  footer { padding:20px 0 40px; border-top:1px solid var(--line); color:var(--muted); font-size:15px; }
+</style>
+</head>
+<body>
+<header><div class="brand">MAG<span>SCROLL</span></div><div class="strap">Read. Listen. Keep a thought.</div></header>
+<main>
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: 10 October 2026</p>
+<p class="draft"><strong>Pre-release draft.</strong> This page describes the current MagScroll development build. The release-specific privacy and licensing review is not yet complete. Do not use this draft as a final Google Play declaration.</p>
+<p>MagScroll is developed by the independent developer using the name one_mad_punk. For privacy or support questions, email <a href="mailto:onemadpunk%2Bmagscroll@gmail.com">onemadpunk+magscroll@gmail.com</a>.</p>
+<h2>What Magscroll does not do</h2>
+<p>Magscroll has no Magscroll user accounts, advertising SDK or developer-operated tracking server. It does not sell personal data. Third-party SDK diagnostics and direct external connections are described below; the app should not be understood as making no third-party diagnostic connections.</p>
+<h2>Optional approximate location</h2>
+<p>If you tap “Find my news area”, Magscroll asks Android for approximate location while the app is open, then uses Android's geocoder to find a broad news area. Android's location and geocoding providers may use network services under their own privacy policies. Magscroll does not store the coordinates or send them to its developer or news publishers. This is optional, is not accessed in the background, and you can choose a news area manually instead.</p>
+<h2>Direct news connections</h2>
+<p>The app connects directly to selected publishers’ public feeds and image servers. As with a normal internet request, those sites can receive the device’s IP address and basic connection information. Magscroll does not add an account identifier, advertising identifier or tracking profile.</p>
+<h2>Data stored on the device</h2>
+<p>Recent editions, images, saved pages, imported-book records, covers, reading position, ratings, personal notes, private reading lists, muted publishers and learned subject preferences are stored in Magscroll’s private app storage. They do not appear in the photo gallery. Magscroll does not upload article content, ebook contents or a reading profile to its developer.</p>
+
+<p>If the user follows a podcast, Magscroll connects directly to the podcast’s RSS and audio hosts. Followed shows, episode history, queue, saved state and listening position are stored privately on the device. Episodes the user downloads for offline listening stay in private app storage and are removed when the user removes the offline copy or unfollows the show. The app-wide “Download podcasts on Wi-Fi only” setting controls whether podcast downloads may use a metered connection. Streaming is not changed by that setting.</p>
+<h2>Podcast discovery and extras</h2>
+<p>Podcast searches and topic-based recommendations use Apple's podcast search service. Typed searches and broad interest terms used for recommendations are sent directly to Apple, together with ordinary connection information such as the IP address. The app does not send notes, ebook text or a detailed reading history as part of these searches. Artwork is loaded from the catalogue or podcast hosts. When available, episode transcripts and chapters are retrieved from the publisher's linked services; playing, downloading or refreshing a show connects to its hosts.</p>
+<p>Optional download-retention settings can remove eligible played or older downloaded episodes. Removing an imported personal-audio copy does not delete the original file you selected elsewhere.</p>
+<h2>Spoken reading</h2>
+<p>The bundled Pocket speech engine generates speech on the device. It does not send the text being read or generated audio to Kyutai or the Magscroll developer. If Android system speech is selected or used as a fallback, the installed speech engine handles the text under its own settings and privacy policy; that engine is not necessarily offline.</p>
+<h2>Books and device folders</h2>
+<p>Magscroll can read individual books or a folder only after the user chooses it through Android’s system file picker. It scans nested folders, reads ebook metadata and text, calculates content fingerprints, and can organise files only inside the selected folder. This processing happens on the device. Magscroll does not request Android’s broad “all files” permission.</p>
+<h2>Language identification and SDK diagnostics</h2>
+<p>Book-language checks use Google’s bundled ML Kit language-identification SDK. Google describes the input-text processing as on-device and says the input text and result are not sent as content to its servers. Separately, ML Kit sends Google performance and usage metrics. Google’s disclosures list device and app information, per-installation identifiers, performance and configuration information, feature events and identified languages. The SDK may also contact Google for maintenance information. These diagnostics are separate from Magscroll’s locally stored reading profile.</p>
+<p>See <a href="https://developers.google.com/ml-kit/terms">Google’s ML Kit terms and privacy information</a>, <a href="https://developers.google.com/ml-kit/android-data-disclosure">its Android SDK data disclosures</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>. Removing the app’s local data does not constitute a deletion request for information already received by external services.</p>
+<h2>Jotter and photo to text</h2>
+<p>Jotter keeps notes, source links and unfinished recovery drafts in private app storage. Photo to text processes a photo chosen or captured by the user with bundled on-device ML Kit text recognition. Magscroll does not upload that image or recognised text. The SDK's separate diagnostics described above can include device/app information, installation identifiers, configuration such as image format and resolution, input/output sizes and performance events; offline recognition is not a claim that the SDK never makes diagnostic connections.</p>
+<p>App-created temporary camera copies are removed after recognition; chosen originals are not changed. The user can edit, copy or explicitly share text to another app, including an email draft. Magscroll does not automatically send email. Markdown/JSON exports go to the destination the user selects and are then subject to that destination's storage and sharing settings. Jotter's private database and drafts are excluded by the app's existing Android cloud-backup whitelist.</p>
+<h2>Optional Dropbox connection</h2>
+<p>If the user connects Dropbox, authentication is handled by Dropbox and the resulting access credential is stored in Magscroll’s private app storage. Magscroll requests read-only file metadata and content access, lets the user choose a folder and individual books, and downloads only the selected books. Requests and files travel directly between the device and Dropbox. Magscroll does not upload, rename or delete Dropbox files and does not send Dropbox data to a developer-operated server. Disconnecting Dropbox removes the locally stored credential; already imported books remain on the device.</p>
+<h2>Optional online book information</h2>
+<p>When the user requests Library Health, missing covers or catalogue information, Magscroll may send a book title, author, series name or ISBN directly to free public catalogue services including Open Library, the Library of Congress, Wikidata, Penguin Random House, Crossref and Internet Archive. Those services receive the query and ordinary connection information such as the device IP address under their own terms and privacy policies. Magscroll does not include ebook text, personal notes, ratings, reading history or a Magscroll account identifier in these searches.</p>
+<h2>Notifications and background work</h2>
+<p>Magscroll uses notifications for spoken-reading controls and to show progress while a user-started folder scan or file organisation continues. These operations do not send notification contents or progress to Magscroll.</p>
+<h2>Android backup</h2>
+<p>Android may back up and restore the app's main settings file, including learned-interest weights, under the user's device-backup settings. The app's backup rules exclude other files and databases, including articles, images, saved pages, book records, podcast history, Jotter notes and recovery drafts. Backups are handled by the device's backup service, not a Magscroll server.</p>
+<h2>Pages shared to Magscroll</h2>
+<p>When a user chooses “Save to Magscroll” from another app, Magscroll downloads the page selected by the user and stores a readable copy privately on that device. It does not bypass logins, paywalls, subscriptions or digital restrictions.</p>
+<h2>Retention and deletion</h2>
+<p>Cached editions are replaced as new editions arrive. Users can remove saved stories, downloaded episodes and notes, and reset preferences in the app. Notes in Jotter Trash can be permanently deleted. Android Settings → Apps → Magscroll → Storage → Clear storage deletes the app's private data, including notes, history, credentials and offline downloads. Uninstalling removes that private app data too. Books in user-selected folders, original photos, exports and copies sent to other apps are not deleted by clearing or uninstalling Magscroll. Magscroll has no app account or developer-operated server record to delete. External services and Android backup have their own retention and deletion controls.</p>
+<h2>Contacting us and visiting this page</h2>
+<p>If you email support, the address, message and attachments you choose to send are handled through email services and can be read by the developer to respond. Do not send private books, work documents or sensitive photos unless needed and you want to share them. You can request deletion of support correspondence by emailing the address above, subject to any applicable legal retention obligations.</p>
+<p>This static policy page has no embedded analytics, advertising, contact form or third-party fonts. If hosted on GitHub Pages, GitHub handles web requests and related logs under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>. Opening an external link takes you to that service's site and policies.</p>
+<h2>Children</h2>
+<p>Magscroll is a general news reader and is not directed to children. An optional Mature news subject is disabled by default and requires an adult confirmation.</p>
+<h2>Changes</h2>
+<p>If Magscroll’s data practices change, this notice and the Google Play Data safety declaration will be updated before the changed version is published.</p>
+</main>
+<footer>MagScroll · Privacy and support · <a href="mailto:onemadpunk%2Bmagscroll@gmail.com">onemadpunk+magscroll@gmail.com</a></footer>
+</body>
+</html>
